@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="/myapp/your-name" method="post">
+    {% csrf_token %}
+    <input id="your_name" type="text" placeholder="Name" name="your_name" value="{{ current_name }}">
+    <input type="submit" value="OK">
+</form>
+
+
+<div style="background:#eaeaea; padding:10pz; margin:10pz;" id="canvas">  {{ getName }} </div>
+
+</body>
+</html>
